@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: cuisine
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON
   m_LightmapFlags: 4
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 584e6f0eb4b1040afadb991fbbff934c, type: 3}
+        m_Texture: {fileID: 2800000, guid: be874593d58794b29bea9a307bb8646c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 584e6f0eb4b1040afadb991fbbff934c, type: 3}
+        m_Texture: {fileID: 2800000, guid: be874593d58794b29bea9a307bb8646c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -65,8 +65,8 @@ Material:
     - _AlphaClip: 1
     - _Blend: 0
     - _BumpScale: 1
-    - _Cull: 1
-    - _Cutoff: 0.55
+    - _Cull: 0
+    - _Cutoff: 0.54
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
