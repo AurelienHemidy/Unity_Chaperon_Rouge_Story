@@ -26,7 +26,11 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
+<<<<<<< HEAD:Assets/Materials/CPR-14/material_cpr_14/hair.mat
   m_CustomRenderQueue: 2000
+=======
+  m_CustomRenderQueue: 2450
+>>>>>>> 5a40a27197e48337408e0de2d5e077669b1fa461:Assets/Materials/CPR-27/PNG/cuisine.mat
   stringTagMap:
     RenderType: Opaque
   disabledShaderPasses: []
@@ -34,7 +38,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
+<<<<<<< HEAD:Assets/Materials/CPR-14/material_cpr_14/hair.mat
         m_Texture: {fileID: 0}
+=======
+        m_Texture: {fileID: 2800000, guid: 28cbc4fc1e48843cd9c75c947d8127cd, type: 3}
+>>>>>>> 5a40a27197e48337408e0de2d5e077669b1fa461:Assets/Materials/CPR-27/PNG/cuisine.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -46,7 +54,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<< HEAD:Assets/Materials/CPR-14/material_cpr_14/hair.mat
         m_Texture: {fileID: 0}
+=======
+        m_Texture: {fileID: 2800000, guid: 28cbc4fc1e48843cd9c75c947d8127cd, type: 3}
+>>>>>>> 5a40a27197e48337408e0de2d5e077669b1fa461:Assets/Materials/CPR-27/PNG/cuisine.mat
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -66,7 +78,11 @@ Material:
     - _Blend: 0
     - _BumpScale: 1
     - _Cull: 2
+<<<<<<< HEAD:Assets/Materials/CPR-14/material_cpr_14/hair.mat
     - _Cutoff: 0.5
+=======
+    - _Cutoff: 0.54
+>>>>>>> 5a40a27197e48337408e0de2d5e077669b1fa461:Assets/Materials/CPR-27/PNG/cuisine.mat
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
