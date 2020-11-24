@@ -151,7 +151,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -208,13 +208,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13997914}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.40419567, y: -0.66261214, z: -0.123418175, w: 0.61833566}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 19.652, y: -102.564, z: -46.957}
 --- !u!1 &411161418
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +305,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4714783507647746952, guid: b948d5dc18a944adea705ecd45ab7a81, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23393ddc905e84bb0b54d41dcdf671a1, type: 2}
+    - target: {fileID: 6660413998550511471, guid: b948d5dc18a944adea705ecd45ab7a81, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 87eff4cb80c0a4b9785245f736c28467, type: 2}
+    - target: {fileID: 6660413998550511471, guid: b948d5dc18a944adea705ecd45ab7a81, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6c664a7b18e2445f7b30531218c183a7, type: 2}
+    - target: {fileID: 6660413998550511471, guid: b948d5dc18a944adea705ecd45ab7a81, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 039f52379753440e89302b11d2698811, type: 2}
+    - target: {fileID: 6660413998550511471, guid: b948d5dc18a944adea705ecd45ab7a81, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 621db7dc511c34c09ab8c2d89b2c7828, type: 2}
     - target: {fileID: 8115405857977967957, guid: b948d5dc18a944adea705ecd45ab7a81, type: 3}
       propertyPath: m_Name
       value: prefab_loup
