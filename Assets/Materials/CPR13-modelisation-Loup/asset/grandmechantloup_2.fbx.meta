@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 62d4c37c5d4a04e94a1a1983104d4d98
+guid: b654d1b6a42ff4428bb721977943b010
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: -6842666708266138392
-    second: marche
-  - first:
-      74: -4791504522942941401
     second: stand
   - first:
-      74: -8399004417902069841
-    second: accoupie
+      74: -4791504522942941401
+    second: marche
+  - first:
+      74: -269305468950392758
+    second: accroupie
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -42,7 +42,7 @@ ModelImporter:
     clipAnimations:
     - serializedVersion: 16
       name: marche
-      takeName: Armature|Armature.001|mixamo.com|Layer0
+      takeName: Armature|Armature|mixamo.com|Layer0
       internalID: 0
       firstFrame: 0
       lastFrame: 36
@@ -99,7 +99,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: accoupie
+      name: accroupie
       takeName: Armature|Armature|mixamo.com|Layer0
       internalID: 0
       firstFrame: 40
