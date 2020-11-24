@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class GaletteBeurreDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     private RectTransform rectTransform;
-    Vector2 startPosition = new Vector2(3.54f, 0f);
+    Vector2 startPosition = new Vector2(-101.7245f, 0f);
 
     [SerializeField] public bool onBasket = false;
 

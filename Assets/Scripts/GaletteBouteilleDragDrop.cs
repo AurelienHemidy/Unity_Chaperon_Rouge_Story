@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class GaletteBouteilleDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
    private RectTransform rectTransform;
-    Vector2 startPosition = new Vector2(215f, 0f);
+    Vector2 startPosition = new Vector2(-33.90143f, 0f);
 
     [SerializeField] public bool onBasket = false;
     [SerializeField] public bool isChoose = false;
