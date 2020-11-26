@@ -6,6 +6,7 @@ public class AnimationScript : MonoBehaviour
 {
     Animator ChaperonAnimator;
     float axisH, axisV;
+    bool moveLeft, moveRight = false;
 
     [SerializeField] float walkSpeed = 2f;
     private void Awake() {
