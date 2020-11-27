@@ -19,15 +19,15 @@ public class DragAndDrop : MonoBehaviour, IDragHandler
         _cam = GetComponent<Camera>();
     }
 
-    private void OnGUI() {
-        Event   currentEvent = Event.current;
-        Vector2 mousePos = new Vector2();
+    // private void OnGUI() {
+    //     Event   currentEvent = Event.current;
+    //     Vector2 mousePos = new Vector2();
 
-        mousePos.x = currentEvent.mousePosition.x;
-        mousePos.y = _cam.pixelHeight - currentEvent.mousePosition.y;
+    //     mousePos.x = currentEvent.mousePosition.x;
+    //     mousePos.y = _cam.pixelHeight - currentEvent.mousePosition.y;
 
-        point = _cam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 1.35f));
-    }
+    //     point = _cam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 1.35f));
+    // }
 
     public void OnDrag(PointerEventData eventData) {
        if(isUpon) {

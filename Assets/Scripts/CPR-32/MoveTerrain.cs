@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class MoveTerrain : MonoBehaviour
 {
-   public GameObject Terrain;
-   private bool moveLeft;
-   private bool moveRight;
+    Animator ChaperonAnimator;
+    float axisH, axisV;
+    public GameObject Terrain;
+    private bool moveLeft;
+    private bool moveRight;
+    private void Awake() {
+        ChaperonAnimator = GameObject.Find("pcr_walk").GetComponent<Animator>();
+    }
     void Start()
     {
         //Terrain = GameObject.Find("Plane");
@@ -16,28 +21,30 @@ public class MoveTerrain : MonoBehaviour
     public void OnPointerDownLeft()
     {
         moveLeft = true;
+        ChaperonAnimator.SetBool("walk", true);
     }
     public void OnPointerUpLeft()
     {
         moveLeft = false;
+        ChaperonAnimator.SetBool("walk", false);
     }
     public void OnPointerDownRight()
     {
         moveRight = true;
+        ChaperonAnimator.SetBool("walk", true);
     }
     public void OnPointerUpRight()
     {
         moveRight = false;
+        ChaperonAnimator.SetBool("walk", false);
     }
 
     private void Update() {
         if(moveLeft) {
-            //Terrain.transform.Translate(-Vector3.right * 1 * Time.deltaTime);
-            Debug.Log("Mouvement vers la gauche");
+            Terrain.transform.Translate(-Vector3.right * 1 * Time.deltaTime);
         }
         if(moveRight) {
-            //Terrain.transform.Translate(Vector3.right * 1 * Time.deltaTime);
-             Debug.Log("Mouvement vers la droite");
+            Terrain.transform.Translate(Vector3.right * 1 * Time.deltaTime);
         }
     }
 }
