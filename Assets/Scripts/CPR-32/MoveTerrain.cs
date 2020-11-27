@@ -41,10 +41,10 @@ public class MoveTerrain : MonoBehaviour
 
     private void Update() {
         if(moveLeft) {
-            //Terrain.transform.Translate(-Vector3.right * 1 * Time.deltaTime);
+            Terrain.transform.Translate(Vector3.right * 2 * Time.deltaTime);
         }
         if(moveRight) {
-            //Terrain.transform.Translate(Vector3.right * 1 * Time.deltaTime);
+            Terrain.transform.Translate(-Vector3.right * 2 * Time.deltaTime);
         }
     }
 }

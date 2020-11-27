@@ -13,10 +13,13 @@ public class ChangeSceneScript : MonoBehaviour
         if(autoIndex) {
         LevelToLoad = SceneManager.GetActiveScene().buildIndex+1;
         }
+        Debug.Log("ça commence");
     }
-    private void OnCollisionEnter(Collision collision) {
-        if(collision.collider.tag == "Player") {
-            SceneManager.LoadScene(LevelToLoad);
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Player") {
+            SceneManager.LoadScene("Scene 3 Entree de foret");
+            Debug.Log("ça touche");
         }
+        Debug.Log("COLLISION");
     }
 }
