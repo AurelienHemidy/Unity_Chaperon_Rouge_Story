@@ -13,7 +13,7 @@ public class UIScript : MonoBehaviour
     #endif
   }
 
-  public void PlayQuitExperience() {
+  public void PlayExperience() {
       SceneManager.LoadScene("Scene 1 Introduction");
   }
 }
