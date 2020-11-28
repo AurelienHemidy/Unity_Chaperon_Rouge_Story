@@ -18,8 +18,6 @@ public class ChangeSceneScript : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Player") {
             SceneManager.LoadScene(LevelToLoad);
-            Debug.Log("ça touche");
         }
-        Debug.Log("COLLISION");
     }
 }
