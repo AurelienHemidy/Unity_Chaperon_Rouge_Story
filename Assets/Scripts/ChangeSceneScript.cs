@@ -17,7 +17,7 @@ public class ChangeSceneScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Player") {
-            SceneManager.LoadScene("Scene 3 Entree de foret");
+            SceneManager.LoadScene(LevelToLoad);
             Debug.Log("ça touche");
         }
         Debug.Log("COLLISION");

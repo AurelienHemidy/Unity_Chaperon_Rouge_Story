@@ -4719,6 +4719,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2144552152}
   - component: {fileID: 2144552151}
+  - component: {fileID: 2144552154}
+  - component: {fileID: 2144552153}
   m_Layer: 0
   m_Name: TimelineIntroduction
   m_TagString: Untagged
@@ -4745,6 +4747,8 @@ PlayableDirector:
     value: {fileID: 1836185220}
   - key: {fileID: 3820595746645491612, guid: 99e6af5199360b34eb165238d9112cb6, type: 2}
     value: {fileID: 1578013272}
+  - key: {fileID: 1864290059685586328, guid: 99e6af5199360b34eb165238d9112cb6, type: 2}
+    value: {fileID: 2144552150}
   m_ExposedReferences:
     m_References:
     - 3000a8052bbe4674e979153f409abff1: {fileID: 1810160449}
@@ -4766,6 +4770,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2144552153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144552150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b763decdf8511e8408853c528c12a7dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 0
+--- !u!114 &2144552154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144552150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: b66e121e4836ace43872cea3fda49000, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2144552153}
+          m_TargetAssemblyTypeName: UIScript, Assembly-CSharp
+          m_MethodName: NextScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2145109522
 PrefabInstance:
   m_ObjectHideFlags: 0
