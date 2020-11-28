@@ -6,8 +6,6 @@ using UnityEngine.EventSystems;
 public class ElementToDragScript : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     private bool onHover = false;
-    public bool isSelected = false;
-    private GameObject onHoverObject;
    public void OnDrag(PointerEventData eventData) {
 
         Plane plane = new Plane(Vector3.forward, transform.position);
