@@ -932,6 +932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d89bfabcd8d0c045be17c771eb838a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 0}
+  transitionTime: 1
   LevelToLoad: 0
   autoIndex: 1
 --- !u!1 &840199844
@@ -1612,6 +1614,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059533581}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1114834460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 550.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 317
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827471, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827504, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_Name
+      value: CrossFadeSceneManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+--- !u!95 &1114834461 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3252732375982194505, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+  m_PrefabInstance: {fileID: 1114834460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1342399955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfd75630b7e684933b525c6b27c4a736, type: 3}
@@ -1832,6 +1896,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d89bfabcd8d0c045be17c771eb838a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transition: {fileID: 1114834461}
+  transitionTime: 1
   LevelToLoad: 0
   autoIndex: 1
 --- !u!1001 &1590069366

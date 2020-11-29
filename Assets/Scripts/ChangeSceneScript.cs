@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneScript : MonoBehaviour
 {
+    public Animator transition;
+    public float transitionTime = 1f;
     [SerializeField] int LevelToLoad;
 
     [SerializeField] bool autoIndex = true;
@@ -13,11 +15,22 @@ public class ChangeSceneScript : MonoBehaviour
         if(autoIndex) {
         LevelToLoad = SceneManager.GetActiveScene().buildIndex+1;
         }
-        Debug.Log("ça commence");
+    }
+
+    public void LoadNextLevel() {
+        StartCoroutine(LoadLevel(LevelToLoad));
+    }
+
+    IEnumerator LoadLevel(int LevelIndex) {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(LevelIndex);
     }
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Player") {
-            SceneManager.LoadScene(LevelToLoad);
+            LoadNextLevel();
         }
     }
 }

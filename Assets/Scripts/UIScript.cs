@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class UIScript : MonoBehaviour
 {
+    public Animator transition;
+    public float transitionTime = 1f;
+
    [SerializeField] int LevelToLoad;
    private void Start() {
      LevelToLoad = SceneManager.GetActiveScene().buildIndex+1;
@@ -17,11 +20,23 @@ public class UIScript : MonoBehaviour
     #endif
   }
 
+  public void LoadNextLevel() {
+        StartCoroutine(LoadLevel(LevelToLoad));
+    }
+
+    IEnumerator LoadLevel(int LevelIndex) {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(LevelIndex);
+    }
+
   public void PlayExperience() {
-      SceneManager.LoadScene("Scene 1 Introduction");
+      LoadNextLevel();
   }
 
   public void NextScene() {
-      SceneManager.LoadScene(LevelToLoad);
+      LoadNextLevel();
   }
 }
