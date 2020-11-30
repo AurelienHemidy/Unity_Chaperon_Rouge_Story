@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Scenes v3-Son/Menu.unity
     guid: 3cbe7ecd9f5761146a543374fcf61e0e
@@ -15,24 +12,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes v3-Son/Scene 1 Introduction.unity
     guid: 7211d0b4693854777bfd4ae70c8c2d43
   - enabled: 1
-    path: Assets/Scenes/Scenes v2/Scene 1.5 PostIntro.unity
-    guid: d26f51b3f2559f849b344d8d0f406409
+    path: Assets/Scenes/Scenes v3-Son/Scene 1.5 PostIntro.unity
+    guid: 564e86910a4fc114d8d91e7627d338f0
   - enabled: 1
-    path: Assets/Scenes/Scenes v2/Scene 2 Maison Petit Chaperon Rouge.unity
-    guid: 558223a8e21671e488920db869f542b7
+    path: Assets/Scenes/Scenes v3-Son/Scene 2 Maison Petit Chaperon Rouge.unity
+    guid: 7b6b02ec6d128ac42a72039ac5a8339c
   - enabled: 1
-    path: Assets/Scenes/Scenes v2/Scene 3 Entree de foret.unity
-    guid: 364c1908953d94771af365c7605d1097
+    path: Assets/Scenes/Scenes v3-Son/Scene 3 Entree de foret.unity
+    guid: 2c4bf19d99573408eb504dfeb4ec070f
   - enabled: 1
-    path: Assets/Scenes/Scenes v2/Scene 4 Choix de chemin.unity
-    guid: dc41d6c3a77dc4ecaa534b24fe319f4d
+    path: Assets/Scenes/Scenes v3-Son/Scene 4 Choix de chemin.unity
+    guid: 250ae75279c4e4da092c30884156de3c
   - enabled: 1
-    path: Assets/Scenes/Scenes v2/Scene 6 Choix de maison.unity
-    guid: 1bd982db90f1548688b1e3e2b4b151e6
+    path: Assets/Scenes/Scenes v3-Son/Scene 5 Foret Grimm.unity
+    guid: 1c4123193053e46a981484685d99483b
   - enabled: 1
-    path: Assets/Scenes/Scenes v2/Scene 7 Maison GM.unity
-    guid: 72a2945eb253a4271914be0d1b3364e3
+    path: Assets/Scenes/Scenes v3-Son/Scene 6 Choix de maison.unity
+    guid: 3d0263bf8018441a8af312b874f806c0
   - enabled: 1
-    path: Assets/Scenes/Scenes v2/Scene 8 Fin.unity
-    guid: bfe57a1029a9db04fade9bf99215874b
+    path: Assets/Scenes/Scenes v3-Son/Scene 7 Maison GM.unity
+    guid: 8fc96ae0ce4df4c2b9d81c1fac4aa42b
+  - enabled: 1
+    path: Assets/Scenes/Scenes v3-Son/Scene 8 Fin.unity
+    guid: d00a57a041342cc4385a47f124a2543a
   m_configObjects: {}
