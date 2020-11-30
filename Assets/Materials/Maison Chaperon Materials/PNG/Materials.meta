@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c9bccbd3aaaad401e9867a4f13b89961
+=======
+<<<<<<< HEAD:Assets/Materials/CPR-6/PNG/Materials.meta
+guid: dcd7faf93602a2049b5bbdcfd706e990
+=======
+guid: c9bccbd3aaaad401e9867a4f13b89961
+>>>>>>> 310ef99f5661cd1055d0c344a790832e8e16458a:Assets/Materials/Maison Chaperon Materials/PNG/Materials.meta
+>>>>>>> 310ef99f5661cd1055d0c344a790832e8e16458a
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

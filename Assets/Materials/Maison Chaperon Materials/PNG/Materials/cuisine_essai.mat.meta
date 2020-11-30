@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 30c5d31de350d45eda124a7d4f6867e6
+=======
+<<<<<<< HEAD:Assets/Scenes/Scenes v3-Son/Global Volume Maison.asset.meta
+guid: 8aace23098ea6471d91332f181c104ff
+=======
+guid: 30c5d31de350d45eda124a7d4f6867e6
+>>>>>>> 310ef99f5661cd1055d0c344a790832e8e16458a:Assets/Materials/Maison Chaperon Materials/PNG/Materials/cuisine_essai.mat.meta
+>>>>>>> 310ef99f5661cd1055d0c344a790832e8e16458a
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
