@@ -37,7 +37,6 @@ public class ChangeSceneScript : MonoBehaviour
             } else {
                 LoadNextLevel();
             }
-            
         }
     }
 }

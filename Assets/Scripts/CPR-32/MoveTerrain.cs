@@ -49,5 +49,8 @@ public class MoveTerrain : MonoBehaviour
         if(moveRight) {
             Terrain.transform.Translate(-Vector3.right * 2 * Time.deltaTime);
         }
+        if(TerrainX != Terrain.transform.position.x) {
+            
+        }
     }
 }
