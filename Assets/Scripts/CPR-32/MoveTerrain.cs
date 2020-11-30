@@ -7,10 +7,13 @@ public class MoveTerrain : MonoBehaviour
     Animator ChaperonAnimator;
     float axisH, axisV;
     public GameObject Terrain;
+
+    public float TerrainX;
     private bool moveLeft;
     private bool moveRight;
     private void Awake() {
         ChaperonAnimator = GameObject.Find("pcr_walk").GetComponent<Animator>();
+        TerrainX = Terrain.transform.position.x;
     }
     void Start()
     {
