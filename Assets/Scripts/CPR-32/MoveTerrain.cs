@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class MoveTerrain : MonoBehaviour
 {
     Animator ChaperonAnimator;
-    float axisH, axisV;
     public GameObject Terrain;
     private Vector3 TerrainStart;
     private bool moveLeft;
@@ -50,7 +49,6 @@ public class MoveTerrain : MonoBehaviour
     {
         moveLeft = true;
         ChaperonAnimator.SetBool("walk", true); 
-        //StartGrayscaleRoutine();
     }
     public void OnPointerUpLeft()
     {
@@ -59,7 +57,6 @@ public class MoveTerrain : MonoBehaviour
     }
     public void OnPointerDownRight()
     {
-        //Reset();
         moveRight = true;
         ChaperonAnimator.SetBool("walk", true);
     }
