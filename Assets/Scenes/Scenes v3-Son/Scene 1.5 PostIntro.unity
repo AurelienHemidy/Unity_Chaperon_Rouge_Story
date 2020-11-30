@@ -8768,6 +8768,26 @@ PrefabInstance:
       propertyPath: m_Colors.m_ColorMultiplier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1146339034119793073, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146339034119793073, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 2030059281}
+    - target: {fileID: 1146339034119793074, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 0333d7be56a674944b2828ebb4e7aa28, type: 2}
+    - target: {fileID: 1146339034119793074, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c974e71d22c9b8f4bae88475504da049, type: 3}
+    - target: {fileID: 1146339034119793074, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1146339034806312326, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
       propertyPath: m_Color.r
       value: 1
@@ -8876,6 +8896,14 @@ PrefabInstance:
       propertyPath: Terrain
       value: 
       objectReference: {fileID: 1866188671}
+    - target: {fileID: 1146339034960152851, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
+      propertyPath: TerrainStartX
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146339034960152851, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1146339034960152878, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
       propertyPath: m_Name
       value: UICanvas2
@@ -10481,7 +10509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866188671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 106.757065, y: 9.7580805, z: 37.04128}
+  m_LocalPosition: {x: 105.757065, y: 9.7580805, z: 37.04128}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1773306496}
@@ -11622,6 +11650,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8924453217889915253, guid: 2bae0866481104c14afe9a451d1c6d1f, type: 3}
   m_PrefabInstance: {fileID: 2024278677}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2030059281 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1146339034119793074, guid: 09f12f18ccf6e344e8bb3cdade10759e, type: 3}
+  m_PrefabInstance: {fileID: 1615545309}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2054127613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12081,6 +12120,10 @@ PrefabInstance:
     - target: {fileID: 3252732376272827504, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
       propertyPath: m_Name
       value: CrossFadeSceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252732376272827504, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 660e46beb15091e4fb3dda690c3516f5, type: 3}
