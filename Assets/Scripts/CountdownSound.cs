@@ -8,12 +8,12 @@ public class CountdownSound : MonoBehaviour
     public float startNumber = 100f;        // The number that we countDown
     public float countSeconds = 10f;        // Time needed for counting
     public float timer = 0f;
-    private float timeMultiplier = 0f;  
+    private float timeMultiplier = 0f;
 
     public bool startCountDown = false;
 
-    private Image Image; 
-    
+    private Image Image;
+
     private void Awake() {
         Image = GetComponent<Image>();
     }
@@ -35,27 +35,28 @@ public class CountdownSound : MonoBehaviour
             timer = 0f;
             Image.fillAmount = 100;
         }
-        if(startNumber < 0) {
-            StopCount();
-        }        
+        // if(startNumber < 0) {
+        //     StopCount();
+        // }
     }
 
-    IEnumerator StartCountDown() {
-        GetComponentInParent<Animator>().enabled = true;
-        yield return new WaitForSeconds(1);
-        startCountDown = true;
-    } 
-    IEnumerator StopCountDown() {
-        GetComponentInParent<Animator>().SetTrigger("fadeOut");
-        yield return new WaitForSeconds(1);
-        GetComponentInParent<Animator>().enabled = false;
-    } 
+    // IEnumerator StartCountDown() {
+    //     GetComponentInParent<Animator>().enabled = true;
+    //     yield return new WaitForSeconds(1);
+    //     startCountDown = true;
+    // }
+    // IEnumerator StopCountDown() {
+    //     GetComponentInParent<Animator>().SetTrigger("fadeOut");
+    //     yield return new WaitForSeconds(1);
+    //     GetComponentInParent<Animator>().enabled = false;
+    // }
 
     public void StartCount() {
-        StartCoroutine(StartCountDown());
+        // StartCoroutine(StartCountDown());
+        startCountDown = true;
     }
 
-    public void StopCount() {
-        StartCoroutine(StopCountDown());
-    }
+    // public void StopCount() {
+    //     StartCoroutine(StopCountDown());
+    // }
 }
