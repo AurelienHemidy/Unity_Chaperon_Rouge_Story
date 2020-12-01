@@ -30,7 +30,7 @@ public class ChangeSceneScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Player") {
-            if(SceneManager.GetActiveScene().buildIndex == 3) {
+            if(SceneManager.GetActiveScene().buildIndex == 3 || SceneManager.GetActiveScene().buildIndex == 5) {
                 if(GameObject.Find("Main Camera").GetComponent<DragAndDrop>().isSelected) {
                     LoadNextLevel();
                 }

@@ -12,6 +12,8 @@ public class MoveTerrain : MonoBehaviour
     private bool moveRight;
     private bool isMove = false;
 
+    private bool canMove = true;
+
     public float duration = 1.5f;
     private void Awake() {
         ChaperonAnimator = GameObject.Find("pcr_walk").GetComponent<Animator>();
@@ -48,7 +50,8 @@ public class MoveTerrain : MonoBehaviour
     public void OnPointerDownLeft()
     {
         moveLeft = true;
-        ChaperonAnimator.SetBool("walk", true); 
+        if(canMove)
+            ChaperonAnimator.SetBool("walk", true); 
     }
     public void OnPointerUpLeft()
     {
@@ -58,12 +61,22 @@ public class MoveTerrain : MonoBehaviour
     public void OnPointerDownRight()
     {
         moveRight = true;
-        ChaperonAnimator.SetBool("walk", true);
+        if(canMove)
+            ChaperonAnimator.SetBool("walk", true);
     }
     public void OnPointerUpRight()
     {
         moveRight = false;
         ChaperonAnimator.SetBool("walk", false);
+    }
+
+    public void StopMove() {
+        ChaperonAnimator.SetBool("walk", false);
+        canMove = false;
+    }
+
+    public void CanMoveAgain() {
+        canMove = true;
     }
 
     private void Update() {
@@ -81,10 +94,10 @@ public class MoveTerrain : MonoBehaviour
             Reset();
 
         if(moveLeft && isMove) {
-            Terrain.transform.Translate(Vector3.right * 2 * Time.deltaTime);
+            Terrain.transform.Translate(Vector3.right * 3 * Time.deltaTime);
         }
         if(moveRight) {
-            Terrain.transform.Translate(-Vector3.right * 2 * Time.deltaTime);
+            Terrain.transform.Translate(-Vector3.right * 3 * Time.deltaTime);
         }
     }
 }

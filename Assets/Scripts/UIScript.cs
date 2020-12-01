@@ -39,4 +39,9 @@ public class UIScript : MonoBehaviour
   public void NextScene() {
       LoadNextLevel();
   }
+
+  public void Reload() {
+      LevelToLoad = 0;
+      LoadNextLevel();
+  }
 }
