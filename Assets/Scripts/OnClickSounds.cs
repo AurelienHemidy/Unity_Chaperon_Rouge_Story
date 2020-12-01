@@ -30,6 +30,7 @@ public class OnClickSounds : MonoBehaviour
             Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
 
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, OreillesLoup)){
+                
                 Debug.Log("oreilles !");
                 OreillesLoupSound.Play();
                 YeuxLoupSound.Stop();
