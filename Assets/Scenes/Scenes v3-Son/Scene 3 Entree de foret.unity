@@ -11938,6 +11938,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireflies
       objectReference: {fileID: 0}
+    - target: {fileID: 3276963732954925186, guid: 9d4020f094ec542298af8b89cfaba9e4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276963732954925186, guid: 9d4020f094ec542298af8b89cfaba9e4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.49728552
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276963732954925186, guid: 9d4020f094ec542298af8b89cfaba9e4, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.5200166
+      objectReference: {fileID: 0}
     - target: {fileID: 3276963732954925213, guid: 9d4020f094ec542298af8b89cfaba9e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 103.67
