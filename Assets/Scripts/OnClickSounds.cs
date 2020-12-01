@@ -33,37 +33,29 @@ public class OnClickSounds : MonoBehaviour
             Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
 
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, OreillesLoup)){
-                
-                Debug.Log("oreilles !");
                 OreillesLoupSound.Play();
                 YeuxLoupSound.Stop();
                 MainsLoupSound.Stop();
                 BoucheLoupSound.Stop();
-                //Fire le son des oreilles
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, YeuxLoup)){
-                Debug.Log("yeux !");
                 OreillesLoupSound.Stop();
                 YeuxLoupSound.Play();
                 MainsLoupSound.Stop();
                 BoucheLoupSound.Stop();
-                //Fire le son des yeux
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, MainsLoup)){
-                Debug.Log("mains !");
                 OreillesLoupSound.Stop();
                 YeuxLoupSound.Stop();
                 MainsLoupSound.Play();
                 BoucheLoupSound.Stop();
-                //Fire le son des mains
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, BoucheLoup)){
-                Debug.Log("mains !");
                 OreillesLoupSound.Stop();
                 YeuxLoupSound.Stop();
                 MainsLoupSound.Stop();
                 BoucheLoupSound.Play();
-                //Fire le son des mains
+                GameObject.Find("Main Camera").GetComponent<UIScript>().LastScene();
             }
         }
     }

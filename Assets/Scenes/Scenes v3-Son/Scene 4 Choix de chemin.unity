@@ -2481,6 +2481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 201120747}
   transitionTime: 1
+  transitionTimeLast: 13
   LevelToLoad: 0
 --- !u!1 &1293245725
 GameObject:
@@ -3083,7 +3084,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1577130921}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 99e6af5199360b34eb165238d9112cb6, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -3099,6 +3100,18 @@ PlayableDirector:
     value: {fileID: 2098258349}
   - key: {fileID: 1864290059685586328, guid: 99e6af5199360b34eb165238d9112cb6, type: 2}
     value: {fileID: 1577130921}
+  - key: {fileID: -6437135953296458246, guid: 99e6af5199360b34eb165238d9112cb6, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3029851912545434555, guid: 99e6af5199360b34eb165238d9112cb6, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3144015466928902330, guid: 99e6af5199360b34eb165238d9112cb6, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7956951124675217125, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
+    value: {fileID: 1472150970}
+  - key: {fileID: 4364927430194153766, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
+    value: {fileID: 2098258349}
+  - key: {fileID: 8760210080384104038, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1577130923

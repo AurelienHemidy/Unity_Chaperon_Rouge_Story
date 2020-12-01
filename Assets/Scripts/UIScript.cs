@@ -7,6 +7,7 @@ public class UIScript : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime = 1f;
+    public float transitionTimeLast = 13f;
 
    [SerializeField] int LevelToLoad;
    private void Start() {
@@ -21,16 +22,29 @@ public class UIScript : MonoBehaviour
   }
 
   public void LoadNextLevel() {
-        StartCoroutine(LoadLevel(LevelToLoad));
+      StartCoroutine(LoadLevel(LevelToLoad));
+  }
+  public void LoadLastLevel() {
+        StartCoroutine(LoadLastLevel(LevelToLoad));
     }
 
-    IEnumerator LoadLevel(int LevelIndex) {
-        transition.SetTrigger("Start");
+  IEnumerator LoadLevel(int LevelIndex) {
+      transition.SetTrigger("Start");
 
-        yield return new WaitForSeconds(transitionTime);
+      yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(LevelIndex);
-    }
+      SceneManager.LoadScene(LevelIndex);
+  }
+
+  IEnumerator LoadLastLevel(int LevelIndex) {
+      yield return new WaitForSeconds(transitionTimeLast);
+
+      transition.SetTrigger("Start");
+
+      yield return new WaitForSeconds(transitionTime);
+
+      SceneManager.LoadScene(LevelIndex);
+  }
 
   public void PlayExperience() {
       LoadNextLevel();
@@ -38,6 +52,9 @@ public class UIScript : MonoBehaviour
 
   public void NextScene() {
       LoadNextLevel();
+  }
+  public void LastScene() {
+      LoadLastLevel();
   }
 
   public void Reload() {
