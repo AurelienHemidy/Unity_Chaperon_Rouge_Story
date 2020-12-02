@@ -20,14 +20,15 @@ public class ElementToDragScript : MonoBehaviour, IDragHandler, IEndDragHandler
    public void OnEndDrag(PointerEventData eventData) {
         if(onHover && !GameObject.Find("Main Camera").GetComponent<DragAndDrop>().isSelected) {
             //GetComponentInChildren<Animator>().enabled = true;
+            AnimationDrop();
             GameObject.Find("Main Camera").GetComponent<DragAndDrop>().isSelected = true;
         }
    }
 
     IEnumerator AnimationDropCoro() {
-        transform.GetChild(0).GetComponent<Animator>().enabled = true;
+        transform.GetChild(0).GetChild(1).GetComponent<Animator>().enabled = true;
         yield return new WaitForSeconds(1.5f);
-        transform.GetChild(1).GetComponent<Animator>().enabled = true;
+        GetComponentInChildren<Animator>().enabled = true;
     }
     public void AnimationDrop() {
         StartCoroutine(AnimationDropCoro());
