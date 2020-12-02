@@ -5,4 +5,5 @@ using UnityEngine;
 public class DragAndDrop : MonoBehaviour
 {
     public bool isSelected = false;
+    public bool isFoundMushroom = false;
 }

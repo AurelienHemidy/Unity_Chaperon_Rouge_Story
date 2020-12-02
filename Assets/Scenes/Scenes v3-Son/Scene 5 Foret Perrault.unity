@@ -477,6 +477,7 @@ GameObject:
   - component: {fileID: 26096981}
   - component: {fileID: 26096980}
   - component: {fileID: 26096979}
+  - component: {fileID: 26096982}
   m_Layer: 0
   m_Name: champignon_05_Original
   m_TagString: Untagged
@@ -492,7 +493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26096977}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 20.22, y: -6.75, z: 4.7}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.13223653, y: 0.13223653, z: 0.13223653}
   m_Children: []
   m_Father: {fileID: 2115399454}
@@ -561,6 +562,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26096977}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &26096982
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26096977}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &26821754 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 99973575305065353, guid: 8eb5f2c4cb2a3451a98ad6f660cf6a68, type: 3}
@@ -710,6 +730,7 @@ GameObject:
   - component: {fileID: 46488606}
   - component: {fileID: 46488605}
   - component: {fileID: 46488604}
+  - component: {fileID: 46488607}
   m_Layer: 0
   m_Name: champignon_04_Original
   m_TagString: Untagged
@@ -725,7 +746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46488602}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 19.46, y: -6.78, z: 2.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.13223653, y: 0.13223653, z: 0.13223653}
   m_Children: []
   m_Father: {fileID: 1463588482}
@@ -794,6 +815,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46488602}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &46488607
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46488602}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &50973000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1119,6 +1159,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 115635721}
+  - component: {fileID: 115635723}
+  - component: {fileID: 115635722}
   m_Layer: 0
   m_Name: champignon_02
   m_TagString: Untagged
@@ -1134,7 +1176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115635720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.041603, y: -0.02, z: 0}
+  m_LocalPosition: {x: 65.911606, y: -6.757, z: -0.12000275}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1553436854}
@@ -1142,6 +1184,31 @@ Transform:
   m_Father: {fileID: 2038898113}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115635722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115635720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052707280de5ec94db5fce36a97de223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &115635723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115635720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 3.0820007}
+  m_Center: {x: 0, y: 0, z: 0.34130478}
 --- !u!4 &129860511 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9025929802054701110, guid: 1ed77d196cfb649c2883fa4a6e70288c, type: 3}
@@ -1712,6 +1779,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262659043}
+  - component: {fileID: 262659045}
+  - component: {fileID: 262659044}
   m_Layer: 0
   m_Name: champignon_08
   m_TagString: Untagged
@@ -1727,7 +1796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262659042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 96.21, y: -0.07, z: -1.68}
+  m_LocalPosition: {x: 95.79, y: -6.8530827, z: 1.2772179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1924187040}
@@ -1735,6 +1804,31 @@ Transform:
   m_Father: {fileID: 2038898113}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262659044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262659042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052707280de5ec94db5fce36a97de223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &262659045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262659042}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 4.5993385}
+  m_Center: {x: 0, y: 0, z: 0.13150597}
 --- !u!1001 &275336326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1908,7 +2002,7 @@ Animator:
   m_GameObject: {fileID: 279873536}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1ecae2b91c128304985815ed39d156ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2787,7 +2881,7 @@ Animator:
   m_GameObject: {fileID: 383154378}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1ecae2b91c128304985815ed39d156ce, type: 2}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3957,6 +4051,7 @@ GameObject:
   - component: {fileID: 637239743}
   - component: {fileID: 637239742}
   - component: {fileID: 637239741}
+  - component: {fileID: 637239744}
   m_Layer: 0
   m_Name: champignon_07_Halo
   m_TagString: Untagged
@@ -3972,7 +4067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637239739}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.51545715, y: -6.783083, z: 2.36}
+  m_LocalPosition: {x: 0, y: 0.0069179535, z: 0.006706238}
   m_LocalScale: {x: 0.12826943, y: 0.12826943, z: 0.12826943}
   m_Children: []
   m_Father: {fileID: 2039120342}
@@ -4041,6 +4136,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637239739}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &637239744
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637239739}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &661317606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4119,6 +4233,7 @@ GameObject:
   - component: {fileID: 682818681}
   - component: {fileID: 682818680}
   - component: {fileID: 682818679}
+  - component: {fileID: 682818682}
   m_Layer: 0
   m_Name: champignon_08_Original
   m_TagString: Untagged
@@ -4134,8 +4249,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682818677}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.42, y: -6.783083, z: 2.27}
-  m_LocalScale: {x: 0.09477007, y: 0.09477007, z: 0.09477007}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.09477008, y: 0.09477008, z: 0.09477008}
   m_Children: []
   m_Father: {fileID: 262659043}
   m_RootOrder: 1
@@ -4203,6 +4318,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682818677}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &682818682
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682818677}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &683102703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5124,6 +5258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
+  isFoundMushroom: 0
 --- !u!114 &787489640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5186,6 +5321,7 @@ GameObject:
   - component: {fileID: 789333295}
   - component: {fileID: 789333294}
   - component: {fileID: 789333293}
+  - component: {fileID: 789333296}
   m_Layer: 0
   m_Name: champignon_02_Original
   m_TagString: Untagged
@@ -5201,7 +5337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789333291}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 10.87, y: -6.737, z: -0.12}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.13223653, y: 0.13223653, z: 0.138}
   m_Children: []
   m_Father: {fileID: 115635721}
@@ -5270,6 +5406,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789333291}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &789333296
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789333291}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &791363146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
@@ -7063,6 +7218,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1831478433}
     m_Modifications:
+    - target: {fileID: 6071831142752168624, guid: 648ab3867f9264886b483063b1d98f61, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6071831142752168627, guid: 648ab3867f9264886b483063b1d98f61, type: 3}
       propertyPath: m_Name
       value: ArbreProfil_2 (2)
@@ -7490,6 +7649,7 @@ GameObject:
   - component: {fileID: 1146458889}
   - component: {fileID: 1146458888}
   - component: {fileID: 1146458887}
+  - component: {fileID: 1146458890}
   m_Layer: 0
   m_Name: champignon_07_Original
   m_TagString: Untagged
@@ -7505,8 +7665,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146458885}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.51545715, y: -6.79, z: 2.3532906}
-  m_LocalScale: {x: 0.10578922, y: 0.10578922, z: 0.10578922}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.10578922, y: 0.10578924, z: 0.10578924}
   m_Children: []
   m_Father: {fileID: 2039120342}
   m_RootOrder: 1
@@ -7574,6 +7734,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146458885}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1146458890
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146458885}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1159103368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8349,6 +8528,7 @@ GameObject:
   - component: {fileID: 1308985861}
   - component: {fileID: 1308985860}
   - component: {fileID: 1308985859}
+  - component: {fileID: 1308985862}
   m_Layer: 0
   m_Name: champignon_06_Halo
   m_TagString: Untagged
@@ -8364,7 +8544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308985857}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.51545715, y: -6.783083, z: 2.3532906}
+  m_LocalPosition: {x: -0.005455017, y: -0.023082733, z: 0.043293}
   m_LocalScale: {x: 0.14413781, y: 0.14413781, z: 0.14413781}
   m_Children: []
   m_Father: {fileID: 1934188590}
@@ -8433,6 +8613,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308985857}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1308985862
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308985857}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1312165620
 GameObject:
   m_ObjectHideFlags: 0
@@ -8445,6 +8644,7 @@ GameObject:
   - component: {fileID: 1312165624}
   - component: {fileID: 1312165623}
   - component: {fileID: 1312165622}
+  - component: {fileID: 1312165625}
   m_Layer: 0
   m_Name: champignon_05_Halo
   m_TagString: Untagged
@@ -8460,7 +8660,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312165620}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 20.23, y: -6.783083, z: 4.76}
+  m_LocalPosition: {x: 0.009994507, y: -0.033082962, z: 0.060001373}
   m_LocalScale: {x: 0.13223653, y: 0.13223653, z: 0.13223653}
   m_Children: []
   m_Father: {fileID: 2115399454}
@@ -8529,6 +8729,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312165620}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1312165625
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312165620}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1321214162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8792,6 +9011,7 @@ GameObject:
   - component: {fileID: 1451520574}
   - component: {fileID: 1451520573}
   - component: {fileID: 1451520572}
+  - component: {fileID: 1451520575}
   m_Layer: 0
   m_Name: champignon_04_Halo
   m_TagString: Untagged
@@ -8807,7 +9027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451520570}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 19.47, y: -6.783083, z: 2.3532906}
+  m_LocalPosition: {x: 0.010002136, y: -0.003083229, z: 0.05329132}
   m_LocalScale: {x: 0.13223653, y: 0.13223653, z: 0.13223653}
   m_Children: []
   m_Father: {fileID: 1463588482}
@@ -8876,6 +9096,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451520570}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1451520575
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451520570}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1455277900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8956,6 +9195,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1463588482}
+  - component: {fileID: 1463588484}
+  - component: {fileID: 1463588483}
   m_Layer: 0
   m_Name: champignon_04
   m_TagString: Untagged
@@ -8971,7 +9212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463588481}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 93.52, y: 0.04, z: -0.17}
+  m_LocalPosition: {x: 112.979996, y: -6.74, z: 1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1451520571}
@@ -8979,6 +9220,31 @@ Transform:
   m_Father: {fileID: 2038898113}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463588483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463588481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052707280de5ec94db5fce36a97de223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1463588484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463588481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 5.89394}
+  m_Center: {x: 0, y: 0, z: -0.7368374}
 --- !u!1001 &1485596326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9508,6 +9774,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1831478433}
     m_Modifications:
+    - target: {fileID: 6071831142752168624, guid: 648ab3867f9264886b483063b1d98f61, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071831142752168625, guid: 648ab3867f9264886b483063b1d98f61, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6071831142752168627, guid: 648ab3867f9264886b483063b1d98f61, type: 3}
       propertyPath: m_Name
       value: ArbreProfil_2 (1)
@@ -9522,7 +9796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6071831142752168639, guid: 648ab3867f9264886b483063b1d98f61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.05872
+      value: 13.958721
       objectReference: {fileID: 0}
     - target: {fileID: 6071831142752168639, guid: 648ab3867f9264886b483063b1d98f61, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9579,6 +9853,7 @@ GameObject:
   - component: {fileID: 1538135950}
   - component: {fileID: 1538135949}
   - component: {fileID: 1538135948}
+  - component: {fileID: 1538135951}
   m_Layer: 0
   m_Name: champignon_06_Original
   m_TagString: Untagged
@@ -9594,8 +9869,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538135946}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.51, y: -6.76, z: 2.31}
-  m_LocalScale: {x: 0.11609911, y: 0.11609911, z: 0.11609911}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11609913, y: 0.11609911, z: 0.11609911}
   m_Children: []
   m_Father: {fileID: 1934188590}
   m_RootOrder: 1
@@ -9663,6 +9938,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538135946}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1538135951
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538135946}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1538153231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10070,6 +10364,7 @@ GameObject:
   - component: {fileID: 1553436857}
   - component: {fileID: 1553436856}
   - component: {fileID: 1553436855}
+  - component: {fileID: 1553436858}
   m_Layer: 0
   m_Name: champignon_02_Halo
   m_TagString: Untagged
@@ -10085,8 +10380,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553436853}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 10.889, y: -6.777, z: -0.06771469}
-  m_LocalScale: {x: 0.11345233, y: 0.11345233, z: 0.13}
+  m_LocalPosition: {x: 0.018997192, y: -0.03999996, z: 0.052288055}
+  m_LocalScale: {x: 0.11345236, y: 0.11345233, z: 0.13}
   m_Children: []
   m_Father: {fileID: 115635721}
   m_RootOrder: 0
@@ -10154,6 +10449,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553436853}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1553436858
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553436853}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1556710934
 GameObject:
   m_ObjectHideFlags: 0
@@ -13757,6 +14071,7 @@ GameObject:
   - component: {fileID: 1924187043}
   - component: {fileID: 1924187042}
   - component: {fileID: 1924187041}
+  - component: {fileID: 1924187044}
   m_Layer: 0
   m_Name: champignon_08_Halo
   m_TagString: Untagged
@@ -13772,8 +14087,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924187039}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0.5, y: -6.81, z: 2.3532906}
-  m_LocalScale: {x: 0.1216576, y: 0.1216576, z: 0.1216576}
+  m_LocalPosition: {x: -0.08000183, y: -0.026917458, z: 0.0832901}
+  m_LocalScale: {x: 0.12165762, y: 0.1216576, z: 0.1216576}
   m_Children: []
   m_Father: {fileID: 262659043}
   m_RootOrder: 0
@@ -13841,6 +14156,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924187039}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1924187044
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924187039}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76e911b7605f234a82ca191301e093f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1934188589
 GameObject:
   m_ObjectHideFlags: 0
@@ -13850,6 +14184,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1934188590}
+  - component: {fileID: 1934188592}
+  - component: {fileID: 1934188591}
   m_Layer: 0
   m_Name: champignon_06
   m_TagString: Untagged
@@ -13865,7 +14201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934188589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.49, y: 0.04, z: 0.29}
+  m_LocalPosition: {x: 57.980003, y: -6.7200003, z: 1.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1308985858}
@@ -13873,6 +14209,31 @@ Transform:
   m_Father: {fileID: 2038898113}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1934188591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934188589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052707280de5ec94db5fce36a97de223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1934188592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934188589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 5.583603}
+  m_Center: {x: 0, y: 0, z: -0.8863945}
 --- !u!1001 &1943574169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14229,7 +14590,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1978233773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e31bb96012a1cbc49b6a5bbb030cb8ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 052707280de5ec94db5fce36a97de223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1978233776
@@ -14243,8 +14604,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.019352}
-  m_Center: {x: 0, y: 0, z: 0.509676}
+  m_Size: {x: 1, y: 1, z: 3.587391}
+  m_Center: {x: 0, y: 0, z: -0.2743435}
 --- !u!4 &1986491151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6759089136638868109, guid: 163774e3a8e9b4a0e9572b77606e7c90, type: 3}
@@ -14340,7 +14701,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038898112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.49, y: -2.324997, z: 16.83543}
+  m_LocalPosition: {x: 11.49, y: -2.324997, z: 14.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1978233774}
@@ -14362,6 +14723,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2039120342}
+  - component: {fileID: 2039120344}
+  - component: {fileID: 2039120343}
   m_Layer: 0
   m_Name: champignon_07
   m_TagString: Untagged
@@ -14377,7 +14740,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039120341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.041603, y: -0.07, z: -0.98}
+  m_LocalPosition: {x: 43.526146, y: -6.8600006, z: 1.373291}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 637239740}
@@ -14385,6 +14748,31 @@ Transform:
   m_Father: {fileID: 2038898113}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2039120343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039120341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052707280de5ec94db5fce36a97de223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2039120344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039120341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 4.2182426}
+  m_Center: {x: 0, y: 0, z: -0.05647087}
 --- !u!1001 &2046743677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14782,6 +15170,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2115399454}
+  - component: {fileID: 2115399456}
+  - component: {fileID: 2115399455}
   m_Layer: 0
   m_Name: champignon_05
   m_TagString: Untagged
@@ -14797,7 +15187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115399453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85.22, y: -0.06, z: -1.68}
+  m_LocalPosition: {x: 105.44, y: -6.8099995, z: 1.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1312165621}
@@ -14805,6 +15195,31 @@ Transform:
   m_Father: {fileID: 2038898113}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2115399455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115399453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052707280de5ec94db5fce36a97de223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2115399456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115399453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 6.944721}
+  m_Center: {x: 0, y: 0, z: -1.1185474}
 --- !u!1001 &2117937442
 PrefabInstance:
   m_ObjectHideFlags: 0
