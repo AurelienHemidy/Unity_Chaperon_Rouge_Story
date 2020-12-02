@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Playables;
 
 public class CountdownSound : MonoBehaviour
 {
@@ -10,12 +11,15 @@ public class CountdownSound : MonoBehaviour
     public float timer = 0f;
     private float timeMultiplier = 0f;
 
-    public bool startCountDown = false;
+    PlayableDirector Timeline;
+
+    private bool startCountDown = false;
 
     private Image Image;
 
     private void Awake() {
         Image = GetComponent<Image>();
+        Timeline = GameObject.Find("TimeLineFadeOut").GetComponent<PlayableDirector>();
     }
 
     void Start()
@@ -34,6 +38,7 @@ public class CountdownSound : MonoBehaviour
             startNumber = 100f;
             timer = 0f;
             Image.fillAmount = 100;
+            Timeline.Play();
         }
         // if(startNumber < 0) {
         //     StopCount();
