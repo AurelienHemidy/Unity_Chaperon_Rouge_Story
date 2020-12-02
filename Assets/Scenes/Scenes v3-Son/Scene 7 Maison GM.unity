@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 287810059}
   - component: {fileID: 287810058}
   - component: {fileID: 287810057}
+  - component: {fileID: 287810060}
   m_Layer: 12
   m_Name: LoupMains
   m_TagString: Untagged
@@ -360,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 287810055}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.57, y: -1.26, z: 2.5601017}
-  m_LocalScale: {x: 0.07272, y: 0.07272, z: 0.07272}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 588876709}
   m_Father: {fileID: 1055899069}
@@ -429,6 +430,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287810055}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &287810060
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287810055}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6262dd1dd28d4694a955ca1fcf3b6fda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &292214726
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +574,7 @@ Transform:
   m_GameObject: {fileID: 309461405}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.19, y: -0.19, z: 3.8652442}
-  m_LocalScale: {x: 0.07272, y: 0.07272, z: 0.07272}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 825725509}
   m_Father: {fileID: 1055899069}
@@ -1073,6 +1093,7 @@ GameObject:
   - component: {fileID: 593026738}
   - component: {fileID: 593026737}
   - component: {fileID: 593026736}
+  - component: {fileID: 593026739}
   m_Layer: 13
   m_Name: LoupBouche
   m_TagString: Untagged
@@ -1089,7 +1110,7 @@ Transform:
   m_GameObject: {fileID: 593026734}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.88997656, y: -0.72, z: 3.212673}
-  m_LocalScale: {x: 0.07272, y: 0.07272, z: 0.07272}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1994497167}
   m_Father: {fileID: 1055899069}
@@ -1158,6 +1179,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593026734}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &593026739
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593026734}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6262dd1dd28d4694a955ca1fcf3b6fda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &825725508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,6 +1576,7 @@ GameObject:
   - component: {fileID: 1086451489}
   - component: {fileID: 1086451488}
   - component: {fileID: 1086451487}
+  - component: {fileID: 1086451490}
   m_Layer: 11
   m_Name: LoupYeux
   m_TagString: Untagged
@@ -1552,7 +1593,7 @@ Transform:
   m_GameObject: {fileID: 1086451485}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.31, y: -0.49, z: 3.212673}
-  m_LocalScale: {x: 0.07272, y: 0.07272, z: 0.07272}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 443703251}
   m_Father: {fileID: 1055899069}
@@ -1621,6 +1662,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086451485}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1086451490
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086451485}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6262dd1dd28d4694a955ca1fcf3b6fda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1266035824
 PrefabInstance:
   m_ObjectHideFlags: 0

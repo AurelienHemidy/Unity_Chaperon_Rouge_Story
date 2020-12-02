@@ -37,18 +37,21 @@ public class OnClickSounds : MonoBehaviour
                 YeuxLoupSound.Stop();
                 MainsLoupSound.Stop();
                 BoucheLoupSound.Stop();
+                NextSound(YeuxLoupObject, 6.5f);
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, YeuxLoup)){
                 OreillesLoupSound.Stop();
                 YeuxLoupSound.Play();
                 MainsLoupSound.Stop();
                 BoucheLoupSound.Stop();
+                NextSound(MainsLoupObject, 7.5f);
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, MainsLoup)){
                 OreillesLoupSound.Stop();
                 YeuxLoupSound.Stop();
                 MainsLoupSound.Play();
                 BoucheLoupSound.Stop();
+                NextSound(BoucheLoupObject, 5.5f);
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, BoucheLoup)){
                 OreillesLoupSound.Stop();
@@ -58,5 +61,14 @@ public class OnClickSounds : MonoBehaviour
                 GameObject.Find("Main Camera").GetComponent<UIScript>().LastScene();
             }
         }
+    }
+
+     IEnumerator NextSoundCoro(GameObject objectSound, float time) {
+        yield return new WaitForSeconds(time);
+        objectSound.GetComponent<Animator>().enabled = true;
+    }
+
+    public void NextSound(GameObject objectSound, float time) {
+        StartCoroutine(NextSoundCoro(objectSound, time));
     }
 }
