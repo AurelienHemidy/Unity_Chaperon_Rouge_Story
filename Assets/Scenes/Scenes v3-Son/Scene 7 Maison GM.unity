@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 63577843}
   - component: {fileID: 63577842}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: CanvasDisappear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -200,7 +200,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &63577845
 RectTransform:
@@ -864,13 +864,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: pcr_walk
       objectReference: {fileID: 0}
+    - target: {fileID: 1433131434114537265, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0056677894
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433131434114537265, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0019278912
+      objectReference: {fileID: 0}
     - target: {fileID: 5674786328996995085, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.6450328
       objectReference: {fileID: 0}
     - target: {fileID: 5674786328996995085, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.31338865
+      value: 0.31338868
       objectReference: {fileID: 0}
     - target: {fileID: 5674786328996995085, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -878,7 +886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5674786328996995085, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.33504632
+      value: 0.33504635
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
@@ -1360,8 +1368,10 @@ GameObject:
   - component: {fileID: 634705767}
   - component: {fileID: 634705769}
   - component: {fileID: 634705768}
+  - component: {fileID: 634705771}
+  - component: {fileID: 634705770}
   m_Layer: 5
-  m_Name: Image
+  m_Name: CanvasDisappearImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1384,7 +1394,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -1820, y: -980}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634705768
 MonoBehaviour:
@@ -1424,6 +1434,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634705766}
   m_CullTransparentMesh: 0
+--- !u!95 &634705770
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634705766}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 399e2e5358c9d8348a3f595b1b8d6c8b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &634705771
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634705766}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &825725508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,9 +2293,9 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1339282573}
-          m_TargetAssemblyTypeName: StartTimeline, Assembly-CSharp
-          m_MethodName: StartChaperonAnimationWalking
+        - m_Target: {fileID: 1662524891}
+          m_TargetAssemblyTypeName: AnimationCPR, Assembly-CSharp
+          m_MethodName: StopWalking
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2266,9 +2307,9 @@ MonoBehaviour:
           m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1339282573}
-          m_TargetAssemblyTypeName: StartTimeline, Assembly-CSharp
-          m_MethodName: StartChaperonAnimationWalking
+        - m_Target: {fileID: 1662524891}
+          m_TargetAssemblyTypeName: AnimationCPR, Assembly-CSharp
+          m_MethodName: StartWalking
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2429,6 +2470,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1662524891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662524888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753c06e7fb994534c817092bb0c5bac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1671808134
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,7 +2945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839915150}
   m_LocalRotation: {x: -0.012306529, y: 0.01559362, z: -0.00027749586, w: -0.9998027}
-  m_LocalPosition: {x: -2.75, y: 2.89, z: -10.57}
+  m_LocalPosition: {x: -3.75, y: 2.89, z: -10.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
