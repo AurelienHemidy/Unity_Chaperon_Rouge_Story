@@ -24,6 +24,7 @@ public class OnClickSounds : MonoBehaviour
     void Start()
     {
         _cam = GetComponent<Camera>();
+        CanvasDisappear();
     }
 
     void Update()
@@ -70,5 +71,14 @@ public class OnClickSounds : MonoBehaviour
 
     public void NextSound(GameObject objectSound, float time) {
         StartCoroutine(NextSoundCoro(objectSound, time));
+    }
+
+     IEnumerator CanvasDisappearCoro() {
+        yield return new WaitForSeconds(18f);
+        GameObject.Find("CanvasDisappearImage").GetComponent<Animator>().enabled = true;
+    }
+
+    public void CanvasDisappear() {
+        StartCoroutine(CanvasDisappearCoro());
     }
 }
