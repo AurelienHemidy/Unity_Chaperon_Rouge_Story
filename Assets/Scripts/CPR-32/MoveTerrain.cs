@@ -18,11 +18,13 @@ public class MoveTerrain : MonoBehaviour
     private void Awake() {
         ChaperonAnimator = GameObject.Find("pcr_walk").GetComponent<Animator>();
         TerrainStart = new Vector3(Terrain.transform.position.x, Terrain.transform.position.y, Terrain.transform.position.z);
+        //StartGrayscaleRoutine();
     }
     void Start()
     {
         moveLeft = false;
         moveRight = false;
+        AnimationBeginningLaunch();
     }
 
     public void StartGrayscaleRoutine() {
@@ -47,6 +49,44 @@ public class MoveTerrain : MonoBehaviour
     public void SetGrayscale(float amount = 1) {
         GameObject.Find("BtnBackward").GetComponent<Image>().material.SetFloat("_GrayscaleAmount", amount);
     }
+
+    //
+    public void StartGrayscaleRoutineBothBtn() {
+        StartCoroutine(GrayscaleRoutineBothBtn(duration, true));
+    }
+
+    public void ResetBothBtn() {
+        StartCoroutine(GrayscaleRoutineBothBtn(duration, false));
+    }
+
+    private IEnumerator GrayscaleRoutineBothBtn(float duration, bool isGrayscale) {
+        float time = 0;
+        while(duration >= time) {
+            float ratio = time / duration;
+            float grayAmount = isGrayscale ? ratio : 1 - ratio;
+            SetGrayscaleBothBtn(grayAmount);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        SetGrayscaleBothBtn(isGrayscale ? 1 : 0);
+    }
+
+    public void SetGrayscaleBothBtn(float amount = 1) {
+        GameObject.Find("BtnBackward").GetComponent<Image>().material.SetFloat("_GrayscaleAmount", amount);
+        GameObject.Find("BtnForward").GetComponent<Image>().material.SetFloat("_GrayscaleAmount", amount);
+    }
+
+    IEnumerator AnimationBeginning() {
+        yield return new WaitForSeconds(1);
+        GameObject.Find("BtnBackward").GetComponent<Animator>().enabled = true;
+        GameObject.Find("BtnForward").GetComponent<Animator>().enabled = true;
+    }
+
+    public void AnimationBeginningLaunch() {
+        StartCoroutine(AnimationBeginning());
+    }
+
+
     public void OnPointerDownLeft()
     {
         moveLeft = true;
@@ -88,10 +128,10 @@ public class MoveTerrain : MonoBehaviour
         } else {
             isMove = false;
             ChaperonAnimator.SetBool("walk", false);
-            StartGrayscaleRoutine();
+            //StartGrayscaleRoutine();
         }
         if(TerrainStart.x > Terrain.transform.position.x)
-            Reset();
+            //Reset();
 
         if(moveLeft && isMove) {
             Terrain.transform.Translate(Vector3.right * 3 * Time.deltaTime);
