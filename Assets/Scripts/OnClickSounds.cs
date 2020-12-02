@@ -80,7 +80,7 @@ public class OnClickSounds : MonoBehaviour
     }
 
      IEnumerator CanvasDisappearCoro() {
-        yield return new WaitForSeconds(18f);
+        yield return new WaitForSeconds(19f);
         GameObject.Find("CanvasDisappearImage").GetComponent<Animator>().enabled = true;
         yield return new WaitForSeconds(10f);
         OreillesLoupObject.GetComponent<Animator>().enabled = true;
