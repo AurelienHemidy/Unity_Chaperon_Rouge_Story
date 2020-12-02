@@ -13,6 +13,10 @@ public class OnClickSounds : MonoBehaviour
     public GameObject YeuxLoupObject;
     public GameObject MainsLoupObject;
     public GameObject BoucheLoupObject;
+    public GameObject OreillesLoupObjectContainer;
+    public GameObject YeuxLoupObjectContainer;
+    public GameObject MainsLoupObjectContainer;
+    public GameObject BoucheLoupObjectContainer;
 
     public AudioSource OreillesLoupSound;
     public AudioSource YeuxLoupSound;
@@ -38,44 +42,48 @@ public class OnClickSounds : MonoBehaviour
                 YeuxLoupSound.Stop();
                 MainsLoupSound.Stop();
                 BoucheLoupSound.Stop();
-                NextSound(YeuxLoupObject, 6.5f);
+                NextSound(YeuxLoupObject, OreillesLoupObjectContainer, 5f);
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, YeuxLoup)){
                 OreillesLoupSound.Stop();
                 YeuxLoupSound.Play();
                 MainsLoupSound.Stop();
                 BoucheLoupSound.Stop();
-                NextSound(MainsLoupObject, 7.5f);
+                NextSound(MainsLoupObject, YeuxLoupObjectContainer, 6f);
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, MainsLoup)){
                 OreillesLoupSound.Stop();
                 YeuxLoupSound.Stop();
                 MainsLoupSound.Play();
                 BoucheLoupSound.Stop();
-                NextSound(BoucheLoupObject, 5.5f);
+                NextSound(BoucheLoupObject, MainsLoupObjectContainer, 4f);
             }
             if(Physics.Raycast(ray, out hit, Mathf.Infinity, BoucheLoup)){
                 OreillesLoupSound.Stop();
                 YeuxLoupSound.Stop();
                 MainsLoupSound.Stop();
                 BoucheLoupSound.Play();
+                BoucheLoupObjectContainer.GetComponent<Animator>().enabled = true;
                 GameObject.Find("Main Camera").GetComponent<UIScript>().LastScene();
             }
         }
     }
 
-     IEnumerator NextSoundCoro(GameObject objectSound, float time) {
+     IEnumerator NextSoundCoro(GameObject objectSound, GameObject ObjectOnClick, float time) {
         yield return new WaitForSeconds(time);
         objectSound.GetComponent<Animator>().enabled = true;
+        ObjectOnClick.GetComponent<Animator>().enabled = true;
     }
 
-    public void NextSound(GameObject objectSound, float time) {
-        StartCoroutine(NextSoundCoro(objectSound, time));
+    public void NextSound(GameObject objectSound, GameObject ObjectOnClick, float time) {
+        StartCoroutine(NextSoundCoro(objectSound, ObjectOnClick, time));
     }
 
      IEnumerator CanvasDisappearCoro() {
         yield return new WaitForSeconds(18f);
         GameObject.Find("CanvasDisappearImage").GetComponent<Animator>().enabled = true;
+        yield return new WaitForSeconds(10f);
+        OreillesLoupObject.GetComponent<Animator>().enabled = true;
     }
 
     public void CanvasDisappear() {

@@ -7,7 +7,7 @@ public class UIScript : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime = 1f;
-    public float transitionTimeLast = 10f;
+    public float transitionTimeLast = 8f;
 
    [SerializeField] int LevelToLoad;
    private void Start() {
@@ -37,11 +37,11 @@ public class UIScript : MonoBehaviour
   }
 
   IEnumerator LoadLastLevel(int LevelIndex) {
-      yield return new WaitForSeconds(transitionTimeLast);
+      yield return new WaitForSeconds(9.5f);
 
       transition.SetTrigger("Start");
 
-      yield return new WaitForSeconds(transitionTime);
+      yield return new WaitForSeconds(4.5f);
 
       SceneManager.LoadScene(LevelIndex);
   }
