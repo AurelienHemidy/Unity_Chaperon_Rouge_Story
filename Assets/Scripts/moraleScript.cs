@@ -5,11 +5,14 @@ using UnityEngine;
 public class moraleScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    public AudioSource MoraleSound;
     void Start()
     {
         moraleNextScene();
     }
      IEnumerator StartCountDown() {
+        yield return new WaitForSeconds(1.5f);
+        MoraleSound.Play();
         yield return new WaitForSeconds(31);
         GetComponent<UIScript>().LoadNextLevel();
     }
