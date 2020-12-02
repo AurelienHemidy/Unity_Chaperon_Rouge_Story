@@ -7,7 +7,7 @@ public class UIScript : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime = 1f;
-    public float transitionTimeLast = 13f;
+    public float transitionTimeLast = 10f;
 
    [SerializeField] int LevelToLoad;
    private void Start() {
