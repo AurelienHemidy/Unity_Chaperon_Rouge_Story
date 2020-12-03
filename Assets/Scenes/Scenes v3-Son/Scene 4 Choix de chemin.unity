@@ -663,58 +663,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d4020f094ec542298af8b89cfaba9e4, type: 3}
---- !u!1 &299616480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 299616482}
-  - component: {fileID: 299616481}
-  m_Layer: 0
-  m_Name: TimeLineFadeIn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &299616481
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299616480}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 962c9604559629a4cbc590f658a0d421, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 0
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 3135428204557023286, guid: 962c9604559629a4cbc590f658a0d421, type: 2}
-    value: {fileID: 670438893}
-  - key: {fileID: -4790933063847094598, guid: 962c9604559629a4cbc590f658a0d421, type: 2}
-    value: {fileID: 468056066}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &299616482
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299616480}
-  m_LocalRotation: {x: -0.015310851, y: 0.0005957559, z: -0.00007903856, w: -0.99988264}
-  m_LocalPosition: {x: 247.40816, y: 0.6894894, z: 91.54295}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 56
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &307496416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3447,7 +3395,7 @@ MonoBehaviour:
   countSeconds: 35.03
   timer: 0
   timeMultiplier: 0
-  TimelineFadeOut: {fileID: 1960913995}
+  TimelineFadeOut: {fileID: 0}
 --- !u!114 &1311951137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5036,58 +4984,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 280ef167f7e5d45d0bc5bec9d1b55e3e, type: 3}
---- !u!1 &1960913994
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1960913996}
-  - component: {fileID: 1960913995}
-  m_Layer: 0
-  m_Name: TimeLineFadeOut
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &1960913995
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960913994}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 0fa31fc8a5b4f1740945f34ee499106d, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 0
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 3491141874021947843, guid: 0fa31fc8a5b4f1740945f34ee499106d, type: 2}
-    value: {fileID: 468056066}
-  - key: {fileID: -8978789835320790267, guid: 0fa31fc8a5b4f1740945f34ee499106d, type: 2}
-    value: {fileID: 670438893}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &1960913996
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960913994}
-  m_LocalRotation: {x: -0.015310851, y: 0.0005957559, z: -0.00007903856, w: -0.99988264}
-  m_LocalPosition: {x: 247.40816, y: 0.6894894, z: 91.54295}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 57
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2001237065
 PrefabInstance:
   m_ObjectHideFlags: 0

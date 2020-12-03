@@ -19,7 +19,6 @@ public class ElementToDragScript : MonoBehaviour, IDragHandler, IEndDragHandler
    } 
    public void OnEndDrag(PointerEventData eventData) {
         if(onHover && !GameObject.Find("Main Camera").GetComponent<DragAndDrop>().isSelected) {
-            //GetComponentInChildren<Animator>().enabled = true;
             AnimationDrop();
             GameObject.Find("Main Camera").GetComponent<DragAndDrop>().isSelected = true;
         }
