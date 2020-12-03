@@ -18,6 +18,7 @@ public class MoveTerrain : MonoBehaviour
     private void Awake() {
         ChaperonAnimator = GameObject.Find("pcr_walk").GetComponent<Animator>();
         TerrainStart = new Vector3(Terrain.transform.position.x, Terrain.transform.position.y, Terrain.transform.position.z);
+        ResetBothBtn();
         //StartGrayscaleRoutine();
     }
     void Start()
