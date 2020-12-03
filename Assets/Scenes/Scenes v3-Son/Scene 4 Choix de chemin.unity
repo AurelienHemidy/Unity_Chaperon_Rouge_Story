@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 199062763}
   - component: {fileID: 199062762}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: CM vcam2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,7 +464,7 @@ Transform:
   m_Children:
   - {fileID: 511367797}
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 2.86, y: 0.98, z: 0}
 --- !u!95 &201120747 stripped
 Animator:
@@ -847,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 37.345, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 84.50706, y: -79.30662}
+  m_AnchoredPosition: {x: 102.8, y: -82.49}
   m_SizeDelta: {x: 184, y: 362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &319040138
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1976,7 +1976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2017,7 +2017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -27.204712, y: -16.755463}
+  m_AnchoredPosition: {x: -27.204712, y: -16.755493}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &716134650
@@ -2227,7 +2227,7 @@ GameObject:
   - component: {fileID: 792834274}
   - component: {fileID: 792834273}
   m_Layer: 0
-  m_Name: CM vcam4
+  m_Name: CM vcam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2281,7 +2281,7 @@ Transform:
   m_Children:
   - {fileID: 1354241462}
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 2.86, y: 0.98, z: 0}
 --- !u!1001 &814656958
 PrefabInstance:
@@ -2853,7 +2853,7 @@ GameObject:
   - component: {fileID: 1203370711}
   - component: {fileID: 1203370713}
   m_Layer: 0
-  m_Name: TimelineVoixOff
+  m_Name: Timeline BGM VoixOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2870,7 +2870,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 7f5cad3b987119a4eb0b053801d48293, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -2878,8 +2878,12 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -2516673650258430482, guid: 7f5cad3b987119a4eb0b053801d48293, type: 2}
     value: {fileID: 1203370710}
+  - key: {fileID: -3203633141910263662, guid: 7f5cad3b987119a4eb0b053801d48293, type: 2}
+    value: {fileID: 1220766762}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - b7956b2f840e945d58516172efc78e75: {fileID: 792834273}
+    - 1b61cfa1e516a4cc8aecaf114cf22f33: {fileID: 199062762}
 --- !u!4 &1203370712
 Transform:
   m_ObjectHideFlags: 0
@@ -2909,7 +2913,22 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 4368ea91a8ded154ab0970dde60be904, type: 2}
+    - {fileID: 11400000, guid: d5beeea57598c44b7b4e10bf6d318eea, type: 2}
     m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1577130922}
+          m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1577130922}
@@ -3280,7 +3299,7 @@ GameObject:
   - component: {fileID: 1302484805}
   - component: {fileID: 1302484804}
   m_Layer: 0
-  m_Name: CM vcam3
+  m_Name: CM vcam4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3334,7 +3353,7 @@ Transform:
   m_Children:
   - {fileID: 1388917876}
   m_Father: {fileID: 0}
-  m_RootOrder: 53
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 2.86, y: 3.22, z: 0}
 --- !u!1 &1311951135
 GameObject:
@@ -3348,6 +3367,7 @@ GameObject:
   - component: {fileID: 1311951138}
   - component: {fileID: 1311951137}
   - component: {fileID: 1311951136}
+  - component: {fileID: 1311951140}
   m_Layer: 0
   m_Name: Progressive
   m_TagString: Untagged
@@ -3362,7 +3382,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311951135}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4dc34a0504df524caa7a86941ffe618, type: 3}
   m_Name: 
@@ -3385,7 +3405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3429,6 +3449,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1311951140
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311951135}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1354241461
 GameObject:
   m_ObjectHideFlags: 3
@@ -3793,7 +3832,7 @@ GameObject:
   - component: {fileID: 1408351553}
   - component: {fileID: 1408351552}
   m_Layer: 0
-  m_Name: CM vcam2
+  m_Name: CM vcam3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3847,7 +3886,7 @@ Transform:
   m_Children:
   - {fileID: 1858835984}
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 2.86, y: -2.22, z: 0}
 --- !u!1 &1472150967
 GameObject:
@@ -3897,7 +3936,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472150967}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -4178,7 +4217,7 @@ GameObject:
   - component: {fileID: 1577130922}
   - component: {fileID: 1577130924}
   m_Layer: 0
-  m_Name: Timeline
+  m_Name: Timeline Choix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4194,8 +4233,8 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
+  m_InitialState: 0
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -4223,16 +4262,20 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: -4248307323055856949, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
     value: {fileID: 1220766762}
-  - key: {fileID: -7318271832588588857, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
-    value: {fileID: 0}
   - key: {fileID: 7560615155189005097, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
     value: {fileID: 0}
   - key: {fileID: 6660111039583899858, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
     value: {fileID: 319040141}
-  - key: {fileID: 7589679730121746091, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
-    value: {fileID: 2071501428}
   - key: {fileID: 8828588225314229969, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
     value: {fileID: 1577130921}
+  - key: {fileID: -7371519663464383236, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
+    value: {fileID: 2071501428}
+  - key: {fileID: 5722878780701938002, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
+    value: {fileID: 670438893}
+  - key: {fileID: -6843691451319222225, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
+    value: {fileID: 468056066}
+  - key: {fileID: -8723227805972333606, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
+    value: {fileID: 1311951140}
   m_ExposedReferences:
     m_References:
     - c8f54a52e030f424c889dc4ab255c0c6: {fileID: 792834273}
@@ -5463,7 +5506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5544,7 +5587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 37.345, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 84.50706, y: -82.7}
+  m_AnchoredPosition: {x: 102.8, y: -82.7}
   m_SizeDelta: {x: 184, y: 362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2098258345
@@ -5636,7 +5679,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098258343}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
