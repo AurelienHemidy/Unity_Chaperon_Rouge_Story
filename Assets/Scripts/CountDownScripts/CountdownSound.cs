@@ -10,7 +10,7 @@ public class CountdownSound : MonoBehaviour
     public float countSeconds = 10f;
     public float timer = 0f;
     private float timeMultiplier = 0f;
-    
+
     private bool startCountDown = false;
 
     private Image Image;
@@ -40,9 +40,5 @@ public class CountdownSound : MonoBehaviour
 
     public void StartCount() {
         startCountDown = true;
-    }
-
-    public void StopCount() {
-        TimelineFadeOut.Play();
     }
 }

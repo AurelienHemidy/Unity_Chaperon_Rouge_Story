@@ -43,7 +43,6 @@ public class Scene4CountDOwn : MonoBehaviour
     }
 
     public void StopCount() {
-        TimelineFadeOut.Play();
         startCountDown = false;
     }
 }
