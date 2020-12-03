@@ -1534,6 +1534,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
+--- !u!1 &514679734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4173515a90ca44fc1bccb404f8fa4f4a, type: 3}
+  m_PrefabInstance: {fileID: 514679733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &514679735
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514679734}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c80dd9c1f67a1d146ac0e98c08ae7950, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &514679736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514679734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753c06e7fb994534c817092bb0c5bac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &527442990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2880,6 +2916,8 @@ PlayableDirector:
     value: {fileID: 1203370710}
   - key: {fileID: -3203633141910263662, guid: 7f5cad3b987119a4eb0b053801d48293, type: 2}
     value: {fileID: 1220766762}
+  - key: {fileID: 6063925217342148623, guid: 7f5cad3b987119a4eb0b053801d48293, type: 2}
+    value: {fileID: 514679735}
   m_ExposedReferences:
     m_References:
     - b7956b2f840e945d58516172efc78e75: {fileID: 792834273}
@@ -2914,6 +2952,8 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 4368ea91a8ded154ab0970dde60be904, type: 2}
     - {fileID: 11400000, guid: d5beeea57598c44b7b4e10bf6d318eea, type: 2}
+    - {fileID: 11400000, guid: c972e31db7bbf8c4099ad241c3ce3f31, type: 2}
+    - {fileID: 11400000, guid: 044f48e1e72e3c34e9b6de0d269f06e5, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls: []
@@ -2922,6 +2962,34 @@ MonoBehaviour:
         - m_Target: {fileID: 1577130922}
           m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
           m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 514679736}
+          m_TargetAssemblyTypeName: AnimationCPR, Assembly-CSharp
+          m_MethodName: StopWalking
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 514679736}
+          m_TargetAssemblyTypeName: AnimationCPR, Assembly-CSharp
+          m_MethodName: StartWalking
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
