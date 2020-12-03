@@ -10,16 +10,13 @@ public class CountdownSound : MonoBehaviour
     public float countSeconds = 10f;
     public float timer = 0f;
     private float timeMultiplier = 0f;
-
-    PlayableDirector TimelineFadeOut;
-
+    
     private bool startCountDown = false;
 
     private Image Image;
 
     private void Awake() {
         Image = GetComponent<Image>();
-        TimelineFadeOut = GameObject.Find("TimeLineFadeOut").GetComponent<PlayableDirector>();
     }
 
     void Start()

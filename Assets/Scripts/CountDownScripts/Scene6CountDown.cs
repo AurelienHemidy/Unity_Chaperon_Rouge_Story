@@ -11,8 +11,6 @@ public class Scene6CountDown : MonoBehaviour
     [SerializeField] float timer = 0f;
     [SerializeField] float timeMultiplier = 0f;
 
-    [SerializeField] PlayableDirector TimelineFadeOut;
-
     private bool startCountDown = false;
 
     private Image Image;
@@ -45,7 +43,6 @@ public class Scene6CountDown : MonoBehaviour
     }
 
     public void StopCount() {
-        TimelineFadeOut.Play();
         startCountDown = false;
     }
 }
