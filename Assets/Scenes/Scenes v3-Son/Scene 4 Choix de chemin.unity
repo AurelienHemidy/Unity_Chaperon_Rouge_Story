@@ -464,7 +464,7 @@ Transform:
   m_Children:
   - {fileID: 511367797}
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 2.86, y: 0.98, z: 0}
 --- !u!95 &201120747 stripped
 Animator:
@@ -647,7 +647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3276963732954925213, guid: 9d4020f094ec542298af8b89cfaba9e4, type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 3276963732954925213, guid: 9d4020f094ec542298af8b89cfaba9e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -713,7 +713,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 55
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &307496416
 GameObject:
@@ -1963,30 +1963,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1311951136}
-        m_TargetAssemblyTypeName: CountdownSound, Assembly-CSharp
-        m_MethodName: StartCount
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 299616481}
-        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &670438896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2305,7 +2281,7 @@ Transform:
   m_Children:
   - {fileID: 1354241462}
   m_Father: {fileID: 0}
-  m_RootOrder: 53
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 2.86, y: 0.98, z: 0}
 --- !u!1001 &814656958
 PrefabInstance:
@@ -2865,6 +2841,89 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1203370710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203370712}
+  - component: {fileID: 1203370711}
+  - component: {fileID: 1203370713}
+  m_Layer: 0
+  m_Name: TimelineVoixOff
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &1203370711
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203370710}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 7f5cad3b987119a4eb0b053801d48293, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 4648413320080622707, guid: 7f5cad3b987119a4eb0b053801d48293, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2516673650258430482, guid: 7f5cad3b987119a4eb0b053801d48293, type: 2}
+    value: {fileID: 1203370710}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1203370712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203370710}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 487.58942, y: 504.47812, z: 181.03412}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 47
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1203370713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203370710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 4368ea91a8ded154ab0970dde60be904, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1577130922}
+          m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1208716753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,7 +3334,7 @@ Transform:
   m_Children:
   - {fileID: 1388917876}
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 2.86, y: 3.22, z: 0}
 --- !u!1 &1311951135
 GameObject:
@@ -3305,13 +3364,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1311951135}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5233892fba71014d9b85cc5bbb3666a, type: 3}
+  m_Script: {fileID: 11500000, guid: a4dc34a0504df524caa7a86941ffe618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startNumber: 100
-  countSeconds: 35.38
+  countSeconds: 35.03
   timer: 0
-  startCountDown: 1
+  timeMultiplier: 0
+  TimelineFadeOut: {fileID: 1960913995}
 --- !u!114 &1311951137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3787,7 +3847,7 @@ Transform:
   m_Children:
   - {fileID: 1858835984}
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 2.86, y: -2.22, z: 0}
 --- !u!1 &1472150967
 GameObject:
@@ -4135,7 +4195,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
   m_InitialState: 1
-  m_WrapMode: 0
+  m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -4171,6 +4231,8 @@ PlayableDirector:
     value: {fileID: 319040141}
   - key: {fileID: 7589679730121746091, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
     value: {fileID: 2071501428}
+  - key: {fileID: 8828588225314229969, guid: 592940bf2b96d9748992cca652bfd42b, type: 2}
+    value: {fileID: 1577130921}
   m_ExposedReferences:
     m_References:
     - c8f54a52e030f424c889dc4ab255c0c6: {fileID: 792834273}
@@ -4197,7 +4259,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1577130924
 MonoBehaviour:
@@ -4214,6 +4276,8 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: b66e121e4836ace43872cea3fda49000, type: 2}
+    - {fileID: 11400000, guid: e2b3e53bccef74aef94c0638b62fcb8e, type: 2}
+    - {fileID: 11400000, guid: 2b3ee112d3bf92d46824a65bd6f0d324, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -4224,6 +4288,46 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1311951136}
+          m_TargetAssemblyTypeName: Scene4CountDOwn, Assembly-CSharp
+          m_MethodName: StartCount
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 299616481}
+          m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1311951136}
+          m_TargetAssemblyTypeName: Scene4CountDOwn, Assembly-CSharp
+          m_MethodName: StopCount
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -4477,7 +4581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4616231892489871534, guid: f2dd4045f8c27457b95e8deaa4e17822, type: 3}
       propertyPath: m_RootOrder
-      value: 49
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4616231892489871534, guid: f2dd4045f8c27457b95e8deaa4e17822, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4919,7 +5023,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 56
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2001237065
 PrefabInstance:
@@ -5023,7 +5127,7 @@ RectTransform:
   - {fileID: 670438898}
   - {fileID: 468056062}
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

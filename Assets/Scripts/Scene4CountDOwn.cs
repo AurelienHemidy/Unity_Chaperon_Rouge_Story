@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Playables;
 
-public class CountdownSound : MonoBehaviour
+public class Scene4CountDOwn : MonoBehaviour
 {
-    public float startNumber = 100f;        // The number that we countDown
-    public float countSeconds = 10f;        // Time needed for counting
-    public float timer = 0f;
-    private float timeMultiplier = 0f;
+    [SerializeField] float startNumber = 100f;        // The number that we countDown
+    [SerializeField] float countSeconds = 10f;        // Time needed for counting
+    [SerializeField] float timer = 0f;
+    [SerializeField] float timeMultiplier = 0f;
 
-    PlayableDirector TimelineFadeOut;
+    [SerializeField] PlayableDirector TimelineFadeOut;
 
     private bool startCountDown = false;
 
@@ -19,7 +19,6 @@ public class CountdownSound : MonoBehaviour
 
     private void Awake() {
         Image = GetComponent<Image>();
-        TimelineFadeOut = GameObject.Find("TimeLineFadeOut").GetComponent<PlayableDirector>();
     }
 
     void Start()
@@ -40,9 +39,6 @@ public class CountdownSound : MonoBehaviour
             Image.fillAmount = 100;
             //TimelineFadeOut.Play();
         }
-        // if(startNumber < 0) {
-        //     StopCount();
-        // }
     }
 
     public void StartCount() {
@@ -52,6 +48,7 @@ public class CountdownSound : MonoBehaviour
 
     public void StopCount() {
         TimelineFadeOut.Play();
+        startCountDown = false;
     }
 
     // public void StopCount() {
